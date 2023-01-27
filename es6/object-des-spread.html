@@ -1,0 +1,33 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      var ob1 = {
+        firstname:'praveen',
+        lastname:'gubbala',
+        age:40,
+        technologies:['nodejs','express','react','angular']
+      }
+      var ob2 = {
+        place:'gachibowli',
+        pin:500008
+      }
+      var ob3 = {...ob1,...ob2}
+      console.log(ob3)
+
+      ob1 = {...ob1,...ob2}
+
+      ob1 = {...ob1,age:29}
+
+      console.log(ob1)
+
+      var nt = 'python';
+
+      ob1 = {...ob1,technologies:[...ob1.technologies,nt]}
+
+      console.log(ob1)
+
+      
+    </script>
+  </body>
+</html>

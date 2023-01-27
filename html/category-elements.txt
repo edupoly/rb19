@@ -1,0 +1,6 @@
+text formatting elements
+  h1...h6
+  b,i,u,strike,strong,code
+  sub,sup
+
+structural elements

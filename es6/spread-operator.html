@@ -1,0 +1,21 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      var ar = [12,23,34,56,61,11,45,['kiran','jai','sai']]
+    
+      var br = ar;
+      var cr = [ar];
+      var dr = [...ar];
+      var er = JSON.parse(JSON.stringify(ar))
+      br[2] = 'lokesh';
+      br[7][1]='ravi'
+      console.log(ar)
+      console.log(br)
+      console.log(cr)
+      console.log(dr)
+      console.log(er)
+
+    </script>
+  </body>
+</html>

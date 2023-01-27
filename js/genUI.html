@@ -1,0 +1,26 @@
+<html>
+  <head></head>
+  <body>
+    <h1>This is HTML Element</h1>
+    <img src="https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg" width="200px" alt="">
+    <div id="d1" style="border:2px solid;margin:10px;padding:10px"></div>
+    <script>
+      var jsh1el=document.createElement('h1');
+      jsh1el.innerHTML='this is javascript generated h1 element';
+      
+      var d1ref = document.getElementById('d1');
+      d1ref.appendChild(jsh1el)
+
+      var jsh2el = document.createElement("h2");
+      jsh2el.innerHTML='this is another javascript element';
+      d1ref.appendChild(jsh2el)
+
+      var jsimg1 = document.createElement('img');
+      jsimg1.src = "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg?format=jpg&crop=4560,2565,x790,y784,safe&width=1200";
+
+      jsimg1.style.width="300px"
+      jsimg1.style.borderRadius="20px"
+      d1ref.appendChild(jsimg1)
+    </script>
+  </body>
+</html>

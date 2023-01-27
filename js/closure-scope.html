@@ -1,0 +1,21 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      var ar = [];
+      for(let i=1;i<=4;i++)
+      {
+        ar.push(function(){console.log(i)})
+      }
+
+      console.dir(ar)
+      
+      var br = [12,10,48,29];
+      var cr = [];
+      br.forEach(function(b,j){
+        cr.push(function(){console.log(j)})
+      })
+      console.dir(cr)
+    </script>
+  </body>
+</html>

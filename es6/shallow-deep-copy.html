@@ -1,0 +1,42 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      //values//primitive data types
+      var a = 123;
+      var b = 'praveen'
+      var c = true
+
+      var x = a;
+      console.log("x",x);
+      console.log("a",a);
+      a = 222;
+      console.log("x",x);
+
+
+      //reference//non primitive
+      var ob1 = {
+        firstname:'edupoly',
+        lastname:'vlr'
+      }
+
+      var fun1 = function(){
+        console.log('hi')
+      }
+
+      var ar = [12,34,60,20,[999,333]];
+
+      var br = ar;
+      var cr = ar.concat([]);
+      var pr = [...ar]
+      var dr = JSON.parse(JSON.stringify(ar));
+
+      ar[2]='ravi';
+      ar[4][1]='sai'
+      console.log(br)
+      console.log(cr)
+      console.log(pr)
+      console.log(dr)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+  <head></head>
+  <body>
+    <form action="http://naistam.com" method="post">
+      <label for="fn">Enter Your Name:</label><input id="fn" type="text" placeholder="Enter name here" name="fullname">
+      <br>
+      <label>Enter Your Email:</label><input type="email" placeholder="Enter Email here" name="email">
+      <br>
+      <label>Enter Your Mobile Number:</label><input required type="number" placeholder="Enter Mobile here" name="mobile">
+      <br>
+      <label>Select your gender:</label>
+      <input type="radio" name='gender' value="female">:Female
+      <input type="radio" name='gender' value="male">:Male
+      <input type="radio" name='gender' value="others">:others
+      <br>
+      <label>Address:</label>
+      <textarea name="" id="" cols="30" rows="10" name="address"></textarea>
+      <br>
+      <select name="country">
+        <option selected disabled>Please select country</option>
+        <option value="ind">India</option>
+        <option value="sri">Srilanka</option>
+        <option value="swd">Sweden</option>
+        <option value="sws">SWiss</option>
+        <option value="chi">China</option>
+        <option value="jpy">Japan</option>
+      </select>
+      <br>
+      <label>What technologies you are looking for</label>
+      <input type="checkbox" name="tech" value="html">:HTML
+      <input type="checkbox" name="tech" value="css">:CSS
+      <input type="checkbox" name="tech" value="boots">:Bootstrap
+      <input type="checkbox" name="tech" value="rjs">:ReactJS
+      <input type="checkbox" name="tech" value="njs">:Nodejs
+      <input type="checkbox" name="tech" value="ajs">:Angular
+      <input type="checkbox" name="tech" value="jv">:Java
+      <input type="checkbox" name="tech" value="py">:Python
+      <br>
+      <button type="button">Just a buttton</button>
+      <input type="button" value="this is also a button">
+      <button>Send</button>
+    </form>
+  </body>
+</html>
+http://127.0.0.1:5500/student-form.html?
+fullname=praveen&email=sdf%40sdf&mobile=123&gender=male&country=Sweden&tech=html&tech=rjs&tech=njs
+http://127.0.0.1:5500/student-form.html?
+fullname=praveen&email=skdjfh%40sdkjfg&mobile=123123&gender=on&country=SWiss&tech=on&tech=on

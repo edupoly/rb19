@@ -1,0 +1,33 @@
+<html>
+  <head></head>
+  <body>
+    <h1 onclick="abc(event)">Hello Events</h1>
+    <h4>India</h4>
+    <ul id="d3">
+      <li>Jayaram</li>
+      <li id="dd">Priya</li>
+      <li>kiran</li>
+      <li>jyothi</li>
+    </ul>
+    <ol id="employees">
+
+    </ol>
+    <script>
+      var x = document.getElementsByTagName('li')
+      for(var i=0;i<=x.length-1;i++){
+        x[i].style.backgroundColor='red'
+        x[i].style.padding='10px'
+        x[i].style.margin='10px'
+      }
+      var y = document.getElementById('dd');
+      y.style.borderRadius='30px'
+      y.innerHTML = 'ramya'
+      var emps = ['praveen','dhrithima','rohit','ramesh','mounika'];
+      emps.forEach(function(emp){
+        var k = document.createElement('li')
+        k.innerHTML = emp;
+        document.getElementById("employees").appendChild(k)
+      })
+    </script>
+  </body>
+</html>

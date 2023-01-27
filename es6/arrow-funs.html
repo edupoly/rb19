@@ -1,0 +1,44 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      //var add = function(a,b){return a+b};
+      //var add = (a,b)=>{return a+b};
+      var add = (a,b)=>a+b;
+      var inc = i=>i+1;
+      console.log(inc(1932))
+
+      var sqr = a=>a*a;
+
+      console.log(sqr(12))
+
+      console.log(add(12,34))
+
+      class Student{
+        fullname;
+        age;
+        marks=[];
+        total=0;
+        constructor(fn,a,m){
+          this.fullname=fn;
+          this.age=a;
+          this.marks=m;
+          this.marks.forEach((a)=>{
+            this.total = this.total+a;
+          })
+        }
+        
+      }
+      var std1 = new Student('gautam p',21,[99,98,89,79,88,86])
+      var std2 = new Student('gautam p',21,[89,98,69,79,58,76])
+      console.log(std1.total)
+      console.log(std2.total)
+
+
+      var ar = [12,3,45,6,356,393];
+      var evens = ar.filter(a=>a%2===0)
+
+      console.log(evens)
+    </script>
+  </body>
+</html>

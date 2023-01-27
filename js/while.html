@@ -1,0 +1,30 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      // var i = 5;//initialisation
+      // while(i<18)//condition
+      // {
+      //   console.log(i);
+      //   i=i+4;//inc or dec
+      // }
+      // console.log("Last line")
+      // for(var i=1;i<=100;i++){
+      //   if(i%10===0){
+      //   console.log(i);
+      //   }
+      // }
+
+      var n = 1023020008,rem,sum=0,i=0;
+      while(n>0){
+        rem = n%10;
+        if(rem!=0){
+          sum = rem*10**i+sum;
+          i++;
+        } 
+        n=parseInt(n/10)
+      }
+      console.log(sum)
+    </script>
+  </body>
+</html>

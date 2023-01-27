@@ -1,0 +1,38 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      var a = 100, b = 200, c = 300,d=400,e = 500;
+      var [x,y,z,w,s] = [11,22,33,44,55];
+      var p = 999;
+      var q = 300;
+      console.log(p,q);
+      [p,q] = [q,p];
+      console.log(p,q);
+
+      var ob1 = {
+        firstname:'praveen',
+        lastname:'gubbala',
+        age:40,
+        technologies:['nodejs','express','react','angular'],
+        address:{
+          place:'gachibowli',
+          pin:500008
+        }
+      }
+      
+      var {firstname:fn,age,lastname,address:{pin}}=ob1;
+      console.log(ob1.firstname)
+      console.log(fn)
+      console.log(lastname)
+      console.log(age)
+      console.log(pin)
+
+    </script>
+  </body>
+</html>
+<!-- 
+  variable destructuring
+  array destructuring
+  object destructuring
+ -->

@@ -1,0 +1,31 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      function abc(){
+        return 'edupoly'
+      }
+      var a = abc;
+
+      var b = function(){
+        return 'praveen'
+      }//function expressions//function literals
+      var r = b();
+      console.log(r);
+
+      (function(){
+        console.log("Hello world");
+      })();//iife//self executable functions
+
+      function pqr(c)
+      {
+        c();
+      }
+
+      // pqr(100)
+      // pqr('praveen')
+      // pqr([123,34,45])
+      pqr(function(){console.log("Hello functions")})
+    </script>
+  </body>
+</html>

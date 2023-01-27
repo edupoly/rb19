@@ -1,0 +1,27 @@
+<html>
+  <head></head>
+  <body>
+    <script>
+      var a = 2934857;
+      var rem;
+      var sum = 0;
+
+      rem = a%10;//a 1452 rem 2 sum 0
+      sum = sum+rem;//a 1452 rem 2 sum 2
+      a = parseInt(a/10);//a 145 rem 2 sum 2
+
+      rem = a%10;//a 145 rem 5 sum 2
+      sum = sum+rem;//a 145 rem 5 sum 7
+      a = parseInt(a/10);//a 14 rem 5 sum 7
+      
+      rem = a%10;//a 14 rem 4 sum 7
+      sum = sum+rem;//a 14 rem 4 sum 11
+      a = parseInt(a/10);//a 1 rem 4 sum 11
+      
+      rem = a%10;//a 1 rem 1 sum 11
+      sum = sum+rem;//a 1 rem 1 sum 12
+      a = parseInt(a/10);//a 0 rem 1 sum 12
+      
+    </script>
+  </body>
+</html>

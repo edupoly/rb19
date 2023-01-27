@@ -1,0 +1,30 @@
+<html>
+  <head></head>
+  <body>
+    <ul id="dd">
+
+    </ul>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeJTUWVqI9yec0gfUIN9L7HDy4VwtYhEPXs3VTwRRbXYxD1EQ/viewform?embedded=true" width="640" height="872" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <script>
+      var players = ['praveen','rohit','kohli','pant'];
+      function genPlayerList(){
+        document.getElementById('dd').innerHTML=''
+        players.forEach(function(p,i){
+          var newli = document.createElement('li');
+          newli.innerHTML = p;
+
+          var delBtn = document.createElement('button');
+          delBtn.innerHTML='Delete';
+          delBtn.onclick = function(){
+            players.splice(i,1)
+            genPlayerList();
+          }
+          newli.appendChild(delBtn)
+
+          document.getElementById('dd').appendChild(newli)
+        })
+      }
+      genPlayerList();
+    </script>
+  </body>
+</html>

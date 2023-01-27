@@ -1,0 +1,45 @@
+<html>
+  <head></head>
+  <body>
+    <div class="abc"></div>
+    <div id="abc"></div>
+    <div>praveen</div>
+    ul>li{home}
+    <script>
+
+      class Mobile
+      {
+        company;
+        price;
+        model;
+        ram;
+        rom;
+        processor;
+        discount;
+        constructor(c,pri,m,ra,ro,pro,dis){
+          this.company=c;
+          this.price=pri;
+          this.model=m;
+          this.ram=ra;
+          this.rom=ro;
+          this.processor=pro;
+          this.discount=dis;
+        }
+        getFinalPrice(){
+          return this.price - this.price*(this.discount/100)
+        }
+      }
+
+      var gmobile = new Mobile('samsung',12000,'j12','4gb','32gb','sd12',20);
+      var mmobile = new Mobile('oppo',14000,'f19','6gb','128gb','sb670',40);
+
+      var gfinal = gmobile.getFinalPrice();
+      var mfinal = mmobile.getFinalPrice()
+      console.dir(gfinal)
+      console.dir(mfinal)
+
+      var dmobile = new Mobile('vivo',23456,'x60','12gb','256gb','sd870',10)
+      console.log(dmobile.getFinalPrice())
+    </script>
+  </body>
+</html>

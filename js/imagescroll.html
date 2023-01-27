@@ -1,0 +1,29 @@
+<html>
+  <head></head>
+  <body>
+    <div>
+      <img src=""  id="imageholder" width="300px" height="200px">
+      <br>
+      <button>Prev</button>
+      <button onclick="nextImage()">Next</button>
+    </div>
+    <script>
+      var i = 0;
+      var images = [
+                      "https://imageio.forbes.com/specials-images/imageserve/5d35eacaf1176b0008974b54/0x0.jpg",
+                      "https://www.newsshare.in/wp-content/uploads/9/Car.jpg",
+                      "https://i.pinimg.com/originals/9c/eb/68/9ceb68af944fb31a1c663ff64bbf0dc0.jpg"
+                    ];
+      var imgref = document.getElementById('imageholder');
+      imgref.src=images[i];
+
+      function nextImage(){
+        if(i===images.length-1){
+          i=-1;
+        }
+        i++;
+        imgref.src=images[i];
+      }
+    </script>
+  </body>
+</html>
